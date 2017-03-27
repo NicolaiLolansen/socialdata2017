@@ -6,3 +6,5 @@ Peergrader, here is the link for the d3.js visualizations. There is one page for
 http://www.student.dtu.dk/~s134859/socialdata2017/
 
 an iPython notebook along with the d3.js source code has been uploaded to this repo. 
+
+The notebook is here: https://github.com/NicolaiMogensen/socialdata2017/blob/master/Assignment2.ipynb
