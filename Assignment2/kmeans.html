@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="d3.js"></script>
+    <script src="kmeansd3.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <script>
+        //Create a place to store global variables
+        //Stores the current datasets being used by the respective viz
+
+        app = {
+            dataset_1: {},
+            dataset_2: {}
+        }
+
+    </script>
+    <div>
+        <p>Assignment 2B: Visualizing geodata</p>
+        <div  class="description">
+            <!-- Description -->
+            The map in this exercise visualizes the output of the Kmeans clustering algorithm from week 5.
+            <br /> 
+            The results for K = 2, ... , 6 has been created and can be toggled between using the buttons below.
+            <br />
+            All crimes has been mapped out and each crime is given a color corresponding to the cluster it is assigned to.
+            <br />
+            Cluster centroids has also been added and is depicted as larger circles with a black outline. 
+            <br />
+            <br />
+            The iPython notebook used to generate the data is linked to in the GitHub repo. 
+            <br />
+            <br />
+            The data consists of 16162 crimes in the prostitution category. Each entry consists of a lat/lng pair plus an index for each value of K depicting the cluster label
+            <br />
+            Our file has been reduced to 850kb in size which is acceptable. Keeping small file sizes are important as the client/viewer
+            <br />
+            has to download all resources to view the visualization. Larger files might, in the worst case, make the browser run out of memory when doing operations
+        </div>
+        
+        <div id="kplot">
+            <p id="kplot_title">Press the buttons to change the value of K</p>
+            <!-- Append D3 code here -->
+            <p id="kplot_num">Showing Kmeans for K=2</p>
+            <div id="floatingCirclesG">
+                <div class="f_circleG" id="frotateG_01"></div>
+                <div class="f_circleG" id="frotateG_02"></div>
+                <div class="f_circleG" id="frotateG_03"></div>
+                <div class="f_circleG" id="frotateG_04"></div>
+                <div class="f_circleG" id="frotateG_05"></div>
+                <div class="f_circleG" id="frotateG_06"></div>
+                <div class="f_circleG" id="frotateG_07"></div>
+                <div class="f_circleG" id="frotateG_08"></div>
+            </div>
+        </div>
+        <div id="k_buttons">
+
+        </div>
+    </div>
+
+    <!-- D3 stuff -->
+    <script>
+        plotKmeans();
+    </script>
+    <!-- SVG stuff -->
+    <br />
+    <a href="index.html">Go back to Assignment 2A</a>
+</body>
+</html>

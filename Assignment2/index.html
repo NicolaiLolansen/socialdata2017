@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="d3.js"></script>
+    <script src="d3code.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <script>
+        //Create a place to store global variables
+        //Stores the current datasets being used by the respective viz
+
+        app = {
+            dataset_1: {},
+            dataset_2: {}
+        }
+
+    </script>
+    <div>
+        <p>Assignment 2A: One scatter plot and two datasets</p>
+        <div  class="description">
+            <!-- Description -->
+            <b>Description</b>
+            <br />
+            The plot in this exercise visualizes the distribution of crimes regarding Vehicle Theft and Prostitution over the districts of San Francisco in 2003 and 2015
+            <br />
+            The radius of the dots in the scatter plot directly correlates with the number of crime in the two categories for that district. Larger is more crime
+            <br />
+            You can hover over the dots to see the number of crimes in each category. Click the "Change Year" button for a smooth transition between 2003 and 2015
+        </div>
+        
+        <div id="viz1">
+            <p id="viz1_title">SF Crime Prostitution vs Vehicle Theft 2003</p>
+            <!-- Append D3 code here -->
+        </div>
+        <div id="btn_1">
+
+        </div>
+
+        <div class="description">
+            <!-- Description -->
+            <br />
+            <b>Explain in your own words why you think I want the axes to be the same for both years?</b>
+            <br />
+            <br />
+            When the axes are the same for both years the reader/viewer of the visualization gets a clear idea of how many crimes were commited in the years relative to each other.
+            <br />
+            It shows the viewer in which year there were commited more prostitution and vehicle theft crimes without the need to consider the axes in detail, so the overview of the data is better.
+            <br />
+            If the axes were not the same and changed according to the data from year 2003 and from 2005 you would have to study the values on the axes and not the data inside the plot.
+            <br />
+            When the reader changes the year, the transition shows which districts that has seen decrease/increase in the respective crime area
+            <br />
+            An important feature of visualizations is that overview comes first, this is achieved when the axes do not change.
+            <br />
+        </div>
+    </div>
+
+     <!-- <p>Visualization 2</p>
+        <div class="description">
+            
+            Description of the visualization
+        </div>
+        <div id="viz2">
+            
+        </div>
+    </div>
+          -->
+    <script>
+        plotViz1();
+    </script>
+
+        
+</body>
+
+<a href="kmeans.html">Go to Assignment 2B - Kmeans</a>
+</html>
